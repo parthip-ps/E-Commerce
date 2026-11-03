@@ -45,7 +45,7 @@ export async function clientFetch<T>(
     if (stored) headers["Authorization"] = `Bearer ${stored}`;
   }
 
-  const res = await fetch(`${API_URL}${path}`, {
+  const res = await fetch(buildApiUrl(path), {
     ...options,
     headers: { ...headers, ...(options.headers as Record<string, string> || {}) },
   });
