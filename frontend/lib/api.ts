@@ -10,7 +10,7 @@ export async function serverFetch<T>(
   path: string,
   options: RequestInit = {}
 ): Promise<T> {
-  const res = await fetch(`${API_URL}${path}`, {
+  const res = await fetch(buildApiUrl(path), {
     ...options,
     headers: {
       "Content-Type": "application/json",
