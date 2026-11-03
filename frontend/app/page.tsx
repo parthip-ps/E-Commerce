@@ -100,7 +100,6 @@ export default function HomePage() {
             </h1>
             <p className="text-lg text-blue-100 mb-8 max-w-xl">
               Discover thousands of premium products across electronics, sports, home & more.
-              Built with Next.js 14 App Router, SSR, and JWT Auth.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/products" className="bg-white text-blue-700 font-bold py-3 px-8 rounded-xl hover:bg-blue-50 transition-colors shadow-lg">
