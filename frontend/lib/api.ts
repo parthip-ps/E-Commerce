@@ -1,4 +1,9 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = (
+  process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"
+).replace(/\/+$/, "");
+
+const buildApiUrl = (path: string) =>
+  `${API_URL}/${path.replace(/^\/+/, "")}`;
 
 // ─── Server-side fetch (SSR / SSG) ──────────────────────────────────────────
 export async function serverFetch<T>(
