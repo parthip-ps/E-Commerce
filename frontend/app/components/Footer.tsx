@@ -11,7 +11,7 @@ export default function Footer() {
               <Package className="w-6 h-6 text-blue-400" />
               ShopNext
             </Link>
-            <p className="text-sm">Modern e-commerce built with Next.js 14 and Node.js.</p>
+            <p className="text-sm">Modern e-commerce built </p>
           </div>
           {[
             { title: "Shop", links: [["Products", "/products"], ["Electronics", "/products?category=electronics"], ["Sports", "/products?category=sports"], ["Home & Garden", "/products?category=home"]] },
@@ -31,7 +31,7 @@ export default function Footer() {
           ))}
         </div>
         <div className="border-t border-gray-800 mt-10 pt-6 text-sm text-center">
-          © {new Date().getFullYear()} ShopNext. Built with Next.js 14 + Node.js + JWT Auth.
+          © {new Date().getFullYear()} 2026-2026, ShopNext., Inc. or its affiliates
         </div>
       </div>
     </footer>
