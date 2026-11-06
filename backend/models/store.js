@@ -15,8 +15,8 @@ const users = [
   },
   {
     id: "user-2",
-    name: "John Doe",
-    email: "john@example.com",
+    name: "David Beckham",
+    email: "demo@example.com",
     password: bcrypt.hashSync("password123", 10),
     role: "user",
     createdAt: new Date("2024-01-15").toISOString(),
